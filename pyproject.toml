@@ -1,0 +1,22 @@
+[project]
+name = "pipeline-contract-check"
+version = "0.1.0"
+description = "Check a CSV extract against a small JSON data contract."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+contract-check = "contractcheck.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

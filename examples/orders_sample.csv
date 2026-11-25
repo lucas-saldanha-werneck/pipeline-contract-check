@@ -1,0 +1,9 @@
+order_id,customer,status,amount,updated_at,coupon
+1001,acme,paid,120.50,2026-11-20,
+1002,acme,shipped,80.00,2026-11-21,SPRING
+1003,globex,new,15.99,2026-11-21,
+1004,globex,paid,-4.00,2026-11-22,
+1005,initech,refunded,60.00,2026-11-22,
+1005,initech,paid,60.00,2026-11-22,
+1006,,paid,42.00,2026-11-22,
+1007,umbrella,paid,abc,2026-11-22,

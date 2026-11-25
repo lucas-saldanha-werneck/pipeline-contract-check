@@ -1,0 +1,13 @@
+{
+  "columns": {
+    "order_id": {"type": "int"},
+    "customer": {"type": "str"},
+    "status": {"type": "str", "allowed": ["new", "paid", "shipped", "cancelled"]},
+    "amount": {"type": "float", "min": 0},
+    "updated_at": {"type": "date", "min": "2026-01-01"},
+    "coupon": {"type": "str", "nullable": true}
+  },
+  "unique_key": ["order_id"],
+  "freshness": {"column": "updated_at", "max_age_days": 2},
+  "row_count": {"expected": 10, "tolerance_pct": 30}
+}
